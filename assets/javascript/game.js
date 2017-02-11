@@ -4,6 +4,7 @@ var score = 0;
 var crystalValue = [];
 
 
+
 $(document).ready(function() {
 
 	function randNum(min, max) {
@@ -22,7 +23,7 @@ $(document).ready(function() {
 	}	//creates 4 random numbers and stores them in a crystals array
 
 
-
+//crystal 1 button click function
 	$('#btn1').click(function() {
 		var btn = crystalValue[0];
 		score += btn;
@@ -30,6 +31,7 @@ $(document).ready(function() {
 		console.log(score);
 	});
 
+//crystal 2 button click function
 	$('#btn2').click(function() {
 		var btn = crystalValue[1];
 		score += btn;
@@ -37,6 +39,7 @@ $(document).ready(function() {
 		console.log(score);
 	});
 
+//crystal 3 button click function
 	$('#btn3').click(function() {
 		var btn = crystalValue[2];
 		score += btn;
@@ -44,6 +47,7 @@ $(document).ready(function() {
 		console.log(score);
 	});
 
+//crystal 4 button click function
 	$('#btn4').click(function() {
 		var btn = crystalValue[3];
 		score += btn;
@@ -51,13 +55,12 @@ $(document).ready(function() {
 		console.log(score);
 	});
 
-console.log('the current score is ' + score);
 
-/*	if (score === goal){
-		console.log('you won nigga');
-		wins++;
-		$('#w').html(wins);
 
-	}	*/
 
+
+	$('#tstbtn').click(function () {
+		console.log('your score is:' + typeof(score)+ score);
+		console.log('your goal is: ' + typeof(goal)+ goal);
+	})
 }); 
